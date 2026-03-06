@@ -1,0 +1,27 @@
+import { Link } from 'react-router-dom';
+
+const Header = () => {
+    return (
+        <header style={headerStyle}>
+            <div style={containerStyle}>
+                <h1 style={logoStyle}>
+                    <Link to="/" style={linkStyle}>FitTracker</Link>
+                </h1>
+                <nav>
+                    <Link to="/" style={navLinkStyle}>Home</Link>
+                    <Link to="/login" style={navLinkStyle}>Login</Link>
+                    <Link to="/register" style={navLinkStyle}>Register</Link>
+                    <Link to="/dashboard" style={navLinkStyle}>Dashboard</Link>
+                </nav>
+            </div>
+        </header>
+    );
+};
+
+const headerStyle = { backgroundColor: '#000000', color: 'white', padding: '1rem 0' };
+const containerStyle = { maxWidth: '1200px', margin: '0 auto', padding: '0 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' };
+const logoStyle = { margin: 0, fontSize: '1.5rem' };
+const linkStyle = { color: 'white', textDecoration: 'none' };
+const navLinkStyle = { color: 'white', textDecoration: 'none', marginLeft: '2rem' };
+
+export default Header;
