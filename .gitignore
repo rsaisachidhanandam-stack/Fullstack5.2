@@ -26,3 +26,6 @@ Thumbs.db
 *.log
 npm-debug.log*
 server/.npm_cache/
+
+# Practice/Exercises
+middleware-practice/
